@@ -1,0 +1,35 @@
+.info,
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+@media (max-width: 799px) {
+  .info,
+  #canvas1 {
+    display: none;
+  }
+}
+#canvas1 {
+  pointer-events: none;
+}
+.info {
+  background-color: #e7d361;
+  width: 800px;
+  height: 300px;
+  box-shadow: 1px 1px 10px black;
+}
+.info #info-inner {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.info #info-inner div {
+  padding: 10px;
+}
+.info #info-inner div h1 {
+  text-align: center;
+  margin-top: 0;
+}
